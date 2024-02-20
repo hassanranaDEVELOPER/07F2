@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+<style>
+.a1
+{
+background-color: aqua;
+width: 50%;
+height: 200px;
+margin: 0 auto;
+text-align: center;
+font-size: 45px;
+
+}
+.a2
+{
+background-color: blue;
+width: 50%;
+height: 200px;
+margin: 0 auto;
+text-align: center;
+font-size: 35px;
+}
+
+.z1
+{
+display: flex;
+justify-content: center;
+
+}
+
+
+
+
+table tr td{
+border: 1px solid black;
+
+
+}
+
+.b2{
+ background-color: cadetblue;
+font-family: serif;
+}
+
+.b3{
+ background-color: cornflowerblue;
+font-family: serif;
+}
+
+.b4{
+ background-color: cornflowerblue;
+font-family: serif;
+}
+
+.b5{
+ background-color: cornflowerblue;
+font-family: serif;
+}
+
+.b6{
+ background-color: cornflowerblue;
+font-family: serif;
+}
+
+
+.b7{
+ background-color: royalblue;
+font-family: serif;
+}
+.b8{
+ background-color: teal;
+font-family: serif;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    
+<div id="inst" class="a1"></div>
+
+<div id="name" class="a2"></div>
+
+
+<div class="z1">
+
+<table>
+
+
+<tr class="b2">
+
+<td id="e"></td>
+
+<td id="b"></td>
+
+</tr>
+<tr>
+    <td>Subject</td>
+    <td>Total </td>
+    <td>Obtain marks </td>
+    
+    </tr>
+<tr class="b3">
+<td>English </td>
+
+<td>100 </td>
+
+
+<td id="eng"></td>
+
+
+
+</tr>
+
+<tr class="b4">
+<td>Maths</td>
+<td>100</td>
+<td id="ma"> </td>
+
+</tr>
+<tr class="b5">
+<td >physics </td>
+<td> 100</td>
+<td id="phy"></td>
+
+</tr>
+<tr class="b6">
+<td>computer</td>
+<td> 100</td>
+<td id="comp"></td>
+
+
+</tr>
+<tr class="b7">
+<td>Total</td>
+<td>400 </td>
+<td id="l"></td>
+</tr>
+<tr class="b8">
+    <td>percentage </td>
+<td id="per"></td>
+</tr>
+</table>
+</div>
+<script>
+
+let inst = prompt("enter your institute name");
+document.getElementById('inst').innerHTML= inst;
+
+let name = prompt("enter your name");
+document.getElementById('name').innerHTML= name;
+
+
+let enroll = prompt("enter your enrollment number ");
+document.getElementById('e').innerHTML= 'Enrollement Number: ' + enroll ;
+
+let batch = prompt("enter your batch code" );
+document.getElementById('b').innerHTML= 'Batch code :' + batch ;
+
+let English = parseInt(prompt("enter your English marks out of 100"));
+document.getElementById('eng').innerHTML= English;
+
+let maths = parseInt(prompt("enter your maths marks out of 100"));
+document.getElementById('ma').innerHTML= English;
+
+let physics  = parseInt(prompt("enter your physics marks out of 100"));
+document.getElementById('phy').innerHTML= physics;
+
+
+let computer = parseInt(prompt("enter your computer marks out of 100"));
+document.getElementById('comp').innerHTML= computer ;
+
+let all = English+maths+physics+computer;
+document.getElementById('l').innerHTML= all ;
+
+
+var percentage = (all * 100) / 400;
+var asd = percentage+"%";
+document.getElementById('per').innerHTML= asd ;
+    </script>
+</body>
+</html>
